@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10142b">
+  <meta name="description" content="A gentle, personal apology letter.">
+  <title>A little note for you</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sky" aria-hidden="true"><div class="stars"></div><div class="moon"></div><div id="fireflies"></div></div>
+  <main class="page">
+    <div class="eyebrow"><span class="sparkle">✦</span> A small note, from the heart <span class="sparkle">✦</span></div>
+    <h1>For <span data-her-name>[Her name]</span><span class="title-heart">♡</span></h1>
+    <p class="intro">Whenever you’re ready, there’s something I’d like you to know.</p>
+
+    <button class="envelope" id="openLetter" aria-expanded="false" aria-controls="letter">
+      <span class="envelope-hint" id="envelopeHint">A letter for you · tap to open</span>
+      <span class="envelope-icon" aria-hidden="true">✉</span>
+      <span class="envelope-line"></span>
+    </button>
+
+    <article class="letter" id="letter" hidden>
+      <div class="letter-top">✧ &nbsp; JUST FOR YOU &nbsp; ✧</div>
+      <p class="salutation">My Dear <span data-her-name>[Her name]</span>,</p>
+      <p>I know I didn’t talk to you properly that day. I was talking in a joking manner, but I understand that you took it seriously, and I’m sorry for hurting you. 🥲💔</p>
+      <p>For that, I’m really, really sorry. 😔😔 I will never do this again. 🫠 Please forgive me, and if you feel comfortable, please unblock me. ❤️</p>
+      <p>I understand if you need time or space. You don’t owe me a reply, and I’ll respect whatever you need right now.</p>
+      <p class="signoff">Yours,<br><span data-your-name>[Your name]</span> ❤️</p>
+      <p class="edit-note">You can tap the highlighted words to make this note your own.</p>
+    </article>
+
+    <section class="response" aria-labelledby="responseTitle">
+      <h2 id="responseTitle">Whenever you feel ready</h2>
+      <p>There’s no pressure to choose right now.</p>
+      <div class="buttons">
+        <button class="choice talk" id="talkButton"><span>♡</span> I’m ready to talk</button>
+        <button class="choice time" id="timeButton">I need a little time</button>
+      </div>
+      <p class="response-note" id="responseNote" aria-live="polite"></p>
+    </section>
+    <footer>Made with care, and room for your feelings <span>·</span> <span data-your-name>[Your name]</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
